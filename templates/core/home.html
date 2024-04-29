@@ -1,0 +1,9 @@
+
+
+{% extends 'include/base.html' %}{% load static %}
+{% block body %}
+{% for institute in institutes %}
+<h1>{{institute.name}}</h1>
+{% endfor %}
+{% include 'include/include_h1.html' %}
+{% endblock %}
