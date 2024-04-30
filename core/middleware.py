@@ -30,7 +30,8 @@ class MyMiddleware:
 
     def process_exception(self,request,exception):
         print("--class exception--",exception)
-        return HttpResponse(exception)
+        # return HttpResponse(exception)
+        return None
     
     def process_template_response(self,request,reponse):
         print("--class response context--",reponse.context_data)
