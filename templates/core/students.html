@@ -1,0 +1,11 @@
+
+
+{% extends 'include/base.html' %}{% load static %}
+{% block body %}
+<h1><b>Student List</b></h1>
+{% for stu in students %}
+<a href="{% url 'core:student_detail' stu.id %}">{{stu.id}}</a><h1>{{stu.name}}</h1>
+{% endfor %}
+{{test}}
+{% include 'include/include_h1.html' %}
+{% endblock %}
